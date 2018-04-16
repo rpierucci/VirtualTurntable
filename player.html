@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="playerstyle.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="playerscript.js"></script>
+		<script type="text/javascript" src="id3-minimized.js" ></script>
+		<title>
+		Final Project
+		</title>
+	</head>
+	<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">Virtual Turntable</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="player.html">Application</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div id="playerbody">
+		<div id="currenttracks">
+			<ul id="listing"></ul>
+		</div>
+		<img id="albumArt" src="nocover.jpg" onclick="mediaSwitch();" width="512px" height="512px">
+		<br><br>
+		<audio controls id="myAudio">
+			<source src ="" id="mp3Source" type="audio/mp3">
+		</audio>
+		<br><br><br>
+		
+		<link href="http://fonts.googleapis.com/css?family=Merriweather+Sans:700" rel="stylesheet" type="text/css"/>
+		
+		
+		<br><br><br><br>
+		Select Album Directory <input type="file" name="tracklist" id="tracklist" multiple webkitdirectory="">
+		<div id ="color1" onclick="bgcolor(1);"></div>
+		<div id ="color2" onclick="bgcolor(2);"></div>
+		<div id ="color3" onclick="bgcolor(3);"></div>
+		<div id ="color4" onclick="bgcolor(4);"></div>
+		<div id ="color5" onclick="bgcolor(5);"></div>
+		<div id ="color6" onclick="bgcolor(6);"></div>
+		<div id ="color7" onclick="bgcolor(7);"></div>
+		<div id ="color8" onclick="bgcolor(8);"></div>
+		<br>
+		<button name="tag" id="tag" onclick="tagTracks(trackList)">Refresh Tags</button>&nbsp;
+		<button name="clear" id="clear" onclick="clearTracks(trackList)">Reset</button>
+	</div>
+		
+	<div id="container">
+		<div id="manual">
+			<br>
+			<div class="col-sm-2"></div>
+			<div class="col-sm-2">Manual<br><br>
+				Please know this program is meant to be used locally at this time. Web implementation to be added in the future. Download <a href="virtualturntable.zip"> here</a>.<br><br>
+				Please know this program requires Google Chrome or Firefox v50.0.2 to run correctly.<br><br>
+				1. Select an album directory by clicking browse. (Note: Directory must be placed in website directory)<br><br>
+				2. Wait a few moments and list will populate. (Note: List may show undefined. If so, click Refresh Tags to correct)<br><br>
+				3. Once list has populated, click on track to play song.<br><br>
+				4. To change album directory, click Reset button to refresh page. (Note: Changing directory more than once without reset will cause issues)<br><br>
+				Warning: Using non-MP3 files will result in issues at this time<br><br>
+				If having trouble viewing, zoom out browser level<br><br>
+			</div>
+			<div class="col-sm-2">
+				Features:<br><br>
+				1. Changeable background (Color options in bottom right corner)<br><br>
+				2. Spinning Disc (Click on album art)<br><br>
+			</div>
+			<div class="col-sm-2">
+				To Do:<br><br>
+				Implement for use via web site access<br><br>
+				Allow addition of more than one album<br><br>
+				Artist/Album "Database"<br><br>
+				Access to specific CD/Vinyl artwork unique to each album<br><br>
+				Error Checking File Types<br><br>
+				Revamp Directory Scanning Structure<br><br>
+				Responsive Design<br><br>
+				Correct Visuals making zoom unnecessary<br><br>
+			</div>
+			<div class="col-sm-2">
+				Addtiional Info:<br><br>
+				ID3Reader.js to read tags created by aadsm<br>
+				<a href="https://github.com/aadsm/JavaScript-ID3-Reader" target="blank">Github</a><br><br>
+				All other work done by Robert Pierucci<br><br>
+				Special thanks to Derrick Mckee for giving me the <br>
+				opportunity to learn
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="readlist.js"></script>
+	</body>
+</html>
+

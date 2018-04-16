@@ -1,0 +1,147 @@
+html
+{
+  height: 100%;
+}
+
+body {
+	height: auto;
+	background: black;
+	color: black;
+	max-height: 100%;
+}
+
+#main {
+	color: white;
+}
+	
+#albumcover {
+	float: left;
+}
+
+#playerbody {
+	margin: auto;
+	color: black;
+	background: linear-gradient(#AFACAC,#636363,#767676);
+	width: 70%;
+	height: auto;
+	border: 2px solid black;
+	padding: 20px;
+}
+
+#currenttracks {
+	float: right;
+	padding: 20px;
+}
+
+#myAudio {
+	float: left;
+	width: 512px;
+}
+
+#manual {
+	color: white;
+}
+	
+
+#color1 {
+	display: inline-block;
+	float: right;
+    background: linear-gradient(#AFACAC,#636363,#767676);
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+#color2 {
+	display: inline-block;
+	float: right;
+    background: linear-gradient(#0D98D8,#75B6D5,#005555);
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+#color3 {
+	display: inline-block;
+	float: right;
+    background: linear-gradient(#182a74,#7687df,#b36501,#b36501);
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+#color4 {
+	display: inline-block;
+	float: right;
+    background: linear-gradient(orange, green);
+    width: 50px;
+    height: 50px;
+     border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+#color5 {
+	display: inline-block;
+	float: right;
+    background: linear-gradient(red, lightgray);
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+#color6 {
+	display: inline-block;
+	float: right;
+    background: linear-gradient(yellow, indigo);
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+#color7 {
+	display: inline-block;
+	float: right;
+    background: linear-gradient(#4072ef,#265ae0);
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+
+#color8 {
+	display: inline-block;
+	float: right;
+    background: linear-gradient(#bf42f4,#a82cdd,#a36dba);
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+.media {
+	width: 497px;
+	height: 497px;
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.mediamain {
+	width: 280px;
+	height: 280px;
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
